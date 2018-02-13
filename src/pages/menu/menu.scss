@@ -1,0 +1,27 @@
+$SIDEMENU_TOP: #4E836D;
+$SIDEMENU_BOTTOM: #87E6BF;
+$SIDEMENU_TRANSPARENCY: rgba(196, 250, 1, 0.4);
+
+.side-menu-gradient{
+    background: -webkit-linear-gradient(left top, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+    background: -o-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+    background: -moz-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+    background: linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+}
+
+.transparent-item{
+    background:none;
+    color:black;
+    font-weight:300;
+    border:0px;
+    .item-content{
+        background:none;
+        &.activated{
+            background: black;
+        }
+    }
+}
+
+.white{
+    color:white;
+}

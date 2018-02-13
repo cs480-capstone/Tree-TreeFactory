@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+  <form class="list">
+    <ion-list>
+      <div>
+      <label class="item item-input">
+        <span class="input-label">Email</span>
+        <input type="email" placeholder="">
+      </label>
+      </div>
+      <div>
+      <label class="item item-input">
+        <span class="input-label">Password</span>
+        <input type="password" placeholder="">
+      </label>
+    </div>
+    </ion-list>
+    <div class="spacer" style="height: 40px;"></div>
+    <button ion-button full (click)="doLogin()">Log In</button>
+    <a ui-sref="signup()" class="button button-positive button-block button-clear">Or create an account</a>
+  </form>
+</ion-content>

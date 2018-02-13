@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    </ion-buttons>
+    <ion-title>Data Collection</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+  <div *ngIf = "params.falling">
+    leaves
+  </div>
+
+
+  <div *ngIf = "params.fruting">
+    fruits
+  </div>
+
+
+  <div *ngIf = "params.flowering">
+    flowers
+  </div>
+
+  <div *ngIf = "params.pinecone">
+    pine cones
+  </div>
+
+ <button ion-button (click) = 'collectData();'>Confirm</button> 
+
+</ion-content>
+
+

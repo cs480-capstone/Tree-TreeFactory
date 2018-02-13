@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    </ion-buttons>
+    <ion-title class = "toolbar-background">
+        <span text-color = "white-text"> Map </span>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+  <div #map id="map"></div>
+
+</ion-content>
+
+<ion-content id = collect>
+  <button ion-button (click) = 'collectData(0);' id = collectdata >Collect Data</button>
+</ion-content>
